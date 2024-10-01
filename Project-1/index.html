@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main w-100 h-[100vh] flex flex-col justify-between">
+      <div
+        class="nav w-100 h-[70px] p-3 lg:ps-[10vw] flex justify-end lg:justify-start items-end"
+      >
+        <i class="ri-menu-line text-[#96abae] text-3xl lg:hidden"></i>
+        <a href="#" class="hidden lg:flex text-xl text-white">Home</a>
+      </div>
+      <!-- nav over -->
+      <div class="flex w-100 h-auto justify-end lg:hidden z-10">
+        <div
+          class="dropDown w-[50%] bg-[#173034] flex flex-col items-end py-2 text-white gap-[3vh]"
+        >
+          <a href="#">Home</a>
+          <a href="#">Contact</a>
+          <a href="#"></a>
+        </div>
+      </div>
+
+      <div class="h-[40vh] flex flex-col lg:flex-row justify-around">
+        <div
+          class="hero flex justify-center items-start w-100 h-auto text-white"
+        >
+          <div
+            class="heroTxt flex justify-center items-center border-4 p-2 w-auto h-[50px] text-2xl tracking-[4px]"
+          >
+            OCEAN | X
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-around lg:justify-center gap-5 h-[25vh]"
+        >
+          <div
+            class="w-100 flex justify-center items-center text-white text-3xl"
+          >
+            <h1 class="w-80 font-extralight text-center">
+              GREAT THINGS ARE COMING
+            </h1>
+          </div>
+          <div>
+            <div class="w-100 flex justify-center h-auto">
+              <div
+                class="w-[170px] h-[50px] flex justify-center items-center bg-white text-[#4d4d4d] tracking-tighter font-extralight"
+              >
+                Learn More
+              </div>
+            </div>
+            <div
+              class="w-100 h-[40px] mt-[2vh] flex justify-center items-center text-[25px] text-white"
+            >
+              <div class="w-[75px] flex justify-between items-center">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hero over -->
+
+      <div
+        class="footer justify-self-end w-100 h-[80px] bg-black flex justify-center items-center text-white px-[20%] text-center font-extralight"
+      >
+        © 2035 by Ocean X. Powered and secured by Wix
+      </div>
+      <!-- foot over -->
+    </div>
+  </body>
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".dropDown").hide();
+      $(".ri-menu-line").click(function () {
+        $(".dropDown").slideToggle(500);
+      });
+    });
+  </script>
+</html>
